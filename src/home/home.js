@@ -11,10 +11,13 @@ import backImg from './homeImg/cloud_moon.jpg'
 function homePage() {
     //select body tag
     const body = document.querySelector('body');
-
     //
     const divContent = document.createElement('div');
     divContent.style.backgroundImage = `url(${backImg})`
+
+
+
+
 
     const sakunaBranch = new Image();
     sakunaBranch.src = brach;

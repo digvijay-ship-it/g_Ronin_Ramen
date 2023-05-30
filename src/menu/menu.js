@@ -126,8 +126,6 @@ function menupage() {
       
         document.querySelector('.drinks').append(heading, sake);
       }
-      
-
 
     function fillMenuContainer() {
         //cheaker if menu container already exist

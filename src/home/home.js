@@ -33,7 +33,7 @@ function homePage() {
         const aboutMeDiv = document.createElement('div');
         aboutMeDiv.classList.add('aboutMe');
 
-        aboutMeDiv.innerHTML = '<p class="mePera wobble">About Us</p>';
+        aboutMeDiv.innerHTML = '<p class="mePera wobble">About Me</p>';
         
         headerDiv.append(homeDiv,menuDiv,aboutMeDiv);
         divContent.append(headerDiv);

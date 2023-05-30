@@ -1,4 +1,3 @@
-// import "normalize.css"
 import "./homeStyle.css"
 
 import yinYangImg from './homeImg/yin-and-yang-152829_1920.png';
@@ -7,14 +6,16 @@ import samuraiImg from './homeImg/whiteSamurai.png';
 import ninjaHeadbandImgSrc from './homeImg/ninjaheadBand1-1.png';
 import samuraiMaskSrc from './homeImg/KitsuneMaskNotKabutoNotMempo.png';
 function homePage() {
-    //select body tag
     const body = document.querySelector('body');
 
     const divContent = document.createElement('div');
     divContent.classList.add('content');
 
     function removeMainContainer(){
-        document.querySelector('.mainContainer').remove();
+        const mainContainer = document.querySelector('.mainContainer');
+        if(mainContainer){
+            mainContainer.remove();
+        }
     }
 
     const createHeader = () => {

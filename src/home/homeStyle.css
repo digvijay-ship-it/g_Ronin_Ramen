@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'samurai-font';
-    src: url('./samurai-blast-font/misc/SamuraiBlast.woff') format('woff2');
+    src: url('../chang-chang-font/Changchangwoodcut-BL25.ttf') format('woff2');
     font-weight: 600;
     font-style: normal;
   }
@@ -24,20 +24,22 @@ html,body{
     background-size: 500px;
     display: flex;
     align-items: center;
-    background-color: black;
-    border-radius: 30px;
+    background-color: white;
+    border-radius: 1rem;
 }
 
 .home,.menu,.aboutMe{
-    color: red;
+    color: rgb(45,48,53);
     font-size: 5rem;
     flex:1; 
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-text-stroke:.3rem white ;
-
+    /* -webkit-text-stroke:.rem white ; */
+}
+.home p,.menu p,.aboutMe p{
+    border-radius: 1rem;
 }
 
 .wobble:hover {
@@ -104,7 +106,6 @@ html,body{
     grid-column: 1/-1;
     display: flex;
     width: 100%;
-    /* background-color: aqua; */
     height:100%;
     justify-content: space-between;
     align-items: end;
@@ -116,7 +117,6 @@ html,body{
 .headbandDiv{
     background-color: black;
     border-radius: 50%;
-    /* rgb(249,252,243) */
 }
 .maskDiv{
     background-color: rgb(249,252,243);

@@ -11,13 +11,6 @@ function homePage() {
     const divContent = document.createElement('div');
     divContent.classList.add('content');
 
-    function removeMainContainer(){
-        const mainContainer = document.querySelector('.mainContainer');
-        if(mainContainer){
-            mainContainer.remove();
-        }
-    }
-
     const createHeader = () => {
         const headerDiv = document.createElement('div');
         headerDiv.classList.add('header');
@@ -116,7 +109,7 @@ function homePage() {
     }
     body.append(divContent);
     return{
-        createHeader,homeMain,makeMainContainer,removeMainContainer
+        createHeader,homeMain,makeMainContainer
     }    
 }
 const homePageMaker = homePage();

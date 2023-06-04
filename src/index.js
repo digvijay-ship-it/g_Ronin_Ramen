@@ -10,19 +10,23 @@ homePageMaker.homeMain();
 
 
 document.querySelector(".homePera").addEventListener('click',()=>{
-    homePageMaker.removeMainContainer();
+    secondChildRemover()
     homePageMaker.homeMain();
 });
 
 document.querySelector(".menuPera").addEventListener('click',()=>{
-    homePageMaker.removeMainContainer();
+    secondChildRemover();
     menuPageBuilder.fillMenuContainer();
 });
 document.querySelector(".aboutMe").addEventListener('click',()=>{
+    secondChildRemover();
+    aboutMePageMaker.aboutMeBuilder();
+});
+
+function secondChildRemover(){
     const parentDiv = document.querySelector('.content');
     if (parentDiv.children.length >= 2) {
         const secondChild = parentDiv.children[1];
         secondChild.remove();
     }
-    aboutMePageMaker.aboutMeBuilder();
-});
+}
